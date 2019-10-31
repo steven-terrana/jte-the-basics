@@ -1,0 +1,4 @@
+libraries{
+  gradle
+  sonarqube
+}
