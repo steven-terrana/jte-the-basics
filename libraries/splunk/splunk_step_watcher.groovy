@@ -1,4 +1,6 @@
-def stepsInvoked = [:] 
+import groovy.transform.Field
+
+@Field def stepsInvoked = [:] 
 
 @BeforeStep
 void before(context){
