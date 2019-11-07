@@ -1,12 +1,10 @@
 import groovy.transform.Field
 
-@Field def stepsInvoked = [
-  currentBuild: []   
-]
+@Field def stepsInvoked = []
 
 @BeforeStep
 void before(context){
-  stepsInvoked.currentBuild << currentBuild.rawBuild.getName()
+  println stepsInvoked
   stepsInvoked[context.step] = [
     startTime: currentBuild.startTimeInMillis
   ]
