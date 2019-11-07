@@ -12,7 +12,7 @@ void before(context){
 
 @AfterStep
 void after(context){
-  stepsInvoked[context.step].endTime: currentBuild.startTimeInMillis
+  stepsInvoked[context.step].endTime = currentBuild.startTimeInMillis
 }
 
 @CleanUp
