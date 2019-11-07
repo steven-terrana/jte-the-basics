@@ -1,0 +1,20 @@
+def stepsInvoked = [:] 
+
+@BeforeStep
+void before(context){
+  stepsInvoked[context.step] = [
+    startTime: currentBuild.startTimeInMillis
+  ]
+}
+
+@AfterStep
+void after(context){
+  stepsInvoked[context.step] = [
+    endTime: currentBuild.startTimeInMillis
+  ]
+}
+
+@CleanUp
+void done(context){
+  println startTime
+}
