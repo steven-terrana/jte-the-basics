@@ -4,6 +4,7 @@ import groovy.transform.Field
 
 @BeforeStep
 void before(context){
+  stepsInvoked.currentBuild = currentBuild.rawBuild.getName()
   stepsInvoked[context.step] = [
     startTime: currentBuild.startTimeInMillis
   ]
@@ -11,9 +12,7 @@ void before(context){
 
 @AfterStep
 void after(context){
-  stepsInvoked[context.step] = [
-    endTime: currentBuild.startTimeInMillis
-  ]
+  stepsInvoked[context.step].endTime: currentBuild.startTimeInMillis
 }
 
 @CleanUp
