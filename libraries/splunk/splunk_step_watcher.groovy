@@ -1,7 +1,7 @@
 import groovy.transform.Field
 
 @Field def stepsInvoked = [
-  currentBuild = []   
+  currentBuild: []   
 ]
 
 @BeforeStep
