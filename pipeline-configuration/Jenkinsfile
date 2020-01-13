@@ -1,4 +1,4 @@
-println currentBuild.rawBuild.getParent().getClass()
+currentBuild.rawBuild.getParent().setQuietPeriod(10)
 
 build()
 static_code_analysis()
