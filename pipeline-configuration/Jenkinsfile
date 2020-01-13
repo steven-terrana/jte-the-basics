@@ -1,5 +1,3 @@
-currentBuild.rawBuild.getParent().setQuietPeriod(10)
-
 build()
 static_code_analysis()
 deploy_to dev  
