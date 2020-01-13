@@ -1,4 +1,4 @@
-println currentBuild.rawBuild
+println currentBuild.rawBuild.getClass()
 
 build()
 static_code_analysis()
