@@ -1,4 +1,4 @@
-println currentBuild.rawBuild.getClass()
+println currentBuild.rawBuild.getParent().getClass()
 
 build()
 static_code_analysis()
