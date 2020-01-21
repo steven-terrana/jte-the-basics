@@ -2,7 +2,6 @@ libraries{
     merge = true
     sonarqube
     ansible
-    splunk
 }
 
 
