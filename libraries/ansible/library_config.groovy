@@ -1,0 +1,5 @@
+fields{
+  required{
+    someField = Array
+  }
+}
