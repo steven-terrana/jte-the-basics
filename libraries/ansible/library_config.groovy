@@ -1,5 +1,5 @@
 fields{
   required{
-    someField = Array
+    someField = ArrayList
   }
 }
