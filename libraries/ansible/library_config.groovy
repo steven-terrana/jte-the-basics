@@ -1,5 +1,8 @@
 fields{
+  optional{
+    optionalField = String
+  }
   required{
-    someField = ArrayList
+    requiredField = String  
   }
 }
