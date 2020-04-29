@@ -1,4 +1,7 @@
-@BeforeStep
+@BeforeStep({ 
+  println currentBuild
+  return true 
+})
 void before(context){
   println "Splunk: running before the ${context.library} library's ${context.step} step" 
 }
