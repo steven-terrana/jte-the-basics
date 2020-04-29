@@ -1,5 +1,5 @@
 @BeforeStep({ 
-  currentBuild.getDisplayName().equals("single")
+  currentBuild.getDisplayName().equals("single-pipeline")
 })
 void before(context){
   println "Splunk: running before the ${context.library} library's ${context.step} step" 
