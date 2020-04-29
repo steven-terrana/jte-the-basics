@@ -1,4 +1,5 @@
 @BeforeStep({ 
+  println currentBuild.getDisplayName()
   currentBuild.getDisplayName().equals("single-pipeline")
 })
 void before(context){
