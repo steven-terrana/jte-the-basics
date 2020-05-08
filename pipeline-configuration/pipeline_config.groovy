@@ -4,6 +4,8 @@ libraries{
     ansible
 }
 
+allow_scm_jenkinsfile = true 
+
 
 application_environments{
     dev{
