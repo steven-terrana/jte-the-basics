@@ -1,5 +1,9 @@
 void call(){
     stage("Gradle: Build"){
-        println "build from the gradle library"
+        if(config.shouldFail){
+            error "gradle build: failing because of configuration" 
+        }else{
+            println "build step from gradle library" 
+        }
     }
 }
