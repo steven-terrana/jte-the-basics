@@ -7,3 +7,8 @@ void before(context){
 void after(context){
   println "Splunk: running after the ${context.library} library's ${context.step} step" 
 }
+
+@AfterStep({ currentBuild.result.toString() == "FAILURE" })
+void afterFailure(context){
+  println "Splunk: running after the ${context.library} library's ${context.step} step failure"  
+}
