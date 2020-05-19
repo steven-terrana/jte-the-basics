@@ -3,12 +3,8 @@ void before(context){
   println "Splunk: running before the ${context.library} library's ${context.step} step" 
 }
 
-@BeforeStep
-void anotherBefore(context){
-  println "Splunk: test having two beforesteps"  
-}
-
 @AfterStep({ config.afterSteps ? (context.step in config.afterSteps) : true })
 void after(context){
   println "Splunk: running after the ${context.library} library's ${context.step} step" 
+  println "Splunk: current status: ${currentBuild.result.toString()}"
 }
