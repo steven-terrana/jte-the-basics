@@ -1,5 +1,4 @@
-libraries{
-    merge = true
+@merge libraries{
     sonarqube
     ansible
     helper
