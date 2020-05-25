@@ -2,6 +2,7 @@ libraries{
     merge = true
     sonarqube
     ansible
+    helper
 }
 
 allow_scm_jenkinsfile = true 
