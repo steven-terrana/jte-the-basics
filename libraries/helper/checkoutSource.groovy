@@ -2,6 +2,6 @@
 void call(context){
   node{
     println "checking out source code" 
-    //checkout scm 
+    checkout scm
   }
 }
