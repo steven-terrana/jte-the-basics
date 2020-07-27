@@ -1,7 +1,5 @@
 void call(){
     stage("Gradle: Build"){ 
-        node{
-           sh "gradle -v"    
-        }
+        println "build from the gradle library" 
     }
 }
