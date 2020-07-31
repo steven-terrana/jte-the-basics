@@ -1,8 +1,5 @@
-@BeforeStep({ context.step.equals("deploy_to") })
-void call(context){
-  println "running before ${context.step}"
-  println "args -> ${context.args}" 
-  def app_env = context.args.first() 
-  
-  println "getting information about ${app_env.short_name}"
+println "i'm outside of a method" 
+
+void call(){
+  println "sample step call method" 
 }
