@@ -1,4 +1,19 @@
-build()
-static_code_analysis()
-deploy_to dev
-deploy_to prod 
+pipeline{
+  agent any
+  stages{
+    stage("CI"){
+      steps{
+        script{
+          build()
+        }
+        static_code_analysis()
+      }
+    }
+    stage("Deployment"){
+      steps{
+        deploy_to dev
+        deploy_to prod
+      }
+    }
+  }
+}
