@@ -1,4 +1,4 @@
 @Init 
-void call(context){
+void call(){
     println "Sending Splunk event for beginning of the pipeline!" 
 }
