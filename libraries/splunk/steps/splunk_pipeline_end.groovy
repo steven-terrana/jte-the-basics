@@ -1,4 +1,4 @@
 @CleanUp
-void call(context){
+void call(){
     println "Splunk: end of the pipeline!" 
 }
