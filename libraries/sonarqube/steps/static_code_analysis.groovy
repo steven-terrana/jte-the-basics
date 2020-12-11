@@ -1,3 +1,3 @@
 void call(){
-    sh "echo hi from sonarqube" 
+    println "sonarqube static code analysis"
 }
